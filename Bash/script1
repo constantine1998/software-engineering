@@ -1,0 +1,6 @@
+cd /
+ls
+sudo mkdir 1435
+ls
+sudo ln -s /1435 /home
+who

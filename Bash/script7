@@ -1,0 +1,1 @@
+for file in *.* ; do extension="${file##*.}"; mv "$file" "${file%.*}hallo.$extension" ; done

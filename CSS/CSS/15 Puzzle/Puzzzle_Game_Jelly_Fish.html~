@@ -1,0 +1,84 @@
+<html>
+  <title>Jelly_Fish</title>
+  <head>
+    <script type="text/javascript">
+      function restart(){
+          var arr = []
+          j=1
+          while(arr.length < 15) {
+              var randomnumber = Math.ceil(Math.random()*15);
+	      if(arr.indexOf(randomnumber) > -1) continue;
+              arr[arr.length] = randomnumber;
+              }
+          for(i=0;i<16;i++){
+              rsrc="Jelly_Fish/"+arr[i]+".png"
+              document.getElementById(j).src=rsrc;
+              j++;
+              }
+          return;
+          }
+     id=16
+     function f (a,b) {
+         if(a==(id+1)||a==(id-1)||a==(id+4)||a==(id-4)) {
+            temp=document.getElementById(a).src
+            document.getElementById(a).src=""
+            document.getElementById(id).src=temp
+            id=a
+            }
+     else {return;}
+     }
+
+		 
+  </script>
+</head>
+
+<body background="b.jpg">
+  
+  
+  <h1><center>Solve the Puzzle.</center></h1>
+  <h3>Click on the near by image to swap it with the empty one.<br>
+    Click on shuffle to start.
+  </h3>
+  <a href="Puzzzle_Game_Scenery.html">Click here to play Scenery Puzzle.</a>
+  <center><h4>The image should look like this.</h4></center>
+  
+  <table style="float: left;">
+      <tr>
+	<td><img id="1" src ="Jelly_Fish/1.png" onclick="f(1,101)"></td>
+	<td><img id="2" src ="Jelly_Fish/2.png" onclick="f(2,102)"></td>
+	<td><img id="3" src ="Jelly_Fish/3.png" onclick="f(3,103)"></td>
+	<td><img id="4" src ="Jelly_Fish/4.png" onclick="f(4,104)"></td>
+      </tr>
+      <tr>
+	<td><img id="5" src ="Jelly_Fish/5.png" onclick="f(5,105)"></td>
+	<td><img id="6" src ="Jelly_Fish/6.png" onclick="f(6,106)"></td>
+	<td><img id="7" src ="Jelly_Fish/7.png" onclick="f(7,107)"></td>
+	<td><img id="8" src ="Jelly_Fish/8.png" onclick="f(8,108)"></td>
+      </tr>
+      <tr>
+	<td><img id="9"  src ="Jelly_Fish/9.png" onclick="f(9,109)"></td>
+	<td><img id="10" src ="Jelly_Fish/10.png" onclick="f(10,110)"></td>
+	<td><img id="11" src ="Jelly_Fish/11.png" onclick="f(11,111)"></td>
+	<td><img id="12" src ="Jelly_Fish/12.png" onclick="f(12,112)"></td>
+      </tr>
+      <tr>
+	<td><img id="13" src ="Jelly_Fish/13.png" onclick="f(13,113)"></td>
+	<td><img id="14" src ="Jelly_Fish/14.png" onclick="f(14,114)"></td>
+	<td><img id="15" src ="Jelly_Fish/15.png" onclick="f(15,115)"></td>
+	<td><img id="16" src ="" onclick="f(16,116)"></td>
+      </tr>
+      <tr>
+	<td></td>
+	<td><br><br>
+	  <center>
+	    <button style="background-color:lightgreen" onclick="restart()"><b>Shuffle</b></button>
+	  </center>
+	</td>
+      </tr>
+    </table>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <img src="Jelly_Fish/Final.jpg">
+  
+</body>
+
+</html>

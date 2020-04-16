@@ -1,0 +1,20 @@
+digraph	G {
+    label = "How to order a 'Burger'"
+    "Start" [shape = ellipse, style = filled, color = "#FF5733"];
+    "Start" -> "Order burger";
+    "Order burger" [shape = box, style = filled, color = "#A2FF33"];
+    "Order burger" -> "Want fries?";
+    "Want fries?" [shape = diamond, style = filled, color = "#2BFFC5"];
+    "Want fries?" -> "Order fries" [label="Yes"]; 
+    "Want fries?" -> "Want drink?" [label="No"];
+    "Order fries" [shape = box, style = filled, color = "#2B62FF"];
+    "Order fries" -> "Want drink?";
+    "Want drink?" [shape = diamond, style = filled, color = "#2BFFC5"];
+    "Want drink?" -> "Order drink" [label="Yes"];
+    "Want drink?" -> "Pay cashier" [label="No"];
+    "Order drink" [shape = box, style = filled, color = "#2B62FF"];
+    "Order drink" -> "Pay cashier";
+    "Pay cashier" [shape = box, style = filled, color = "#A2FF33"];
+    "Pay cashier" -> "Collect your order";
+    "Collect your order" [shape = ellipse, style = filled, color = "#FF5733"];
+}

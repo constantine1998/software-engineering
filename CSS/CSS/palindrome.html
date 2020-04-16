@@ -1,0 +1,51 @@
+<html>
+<title>Is it a palindrome?</title>
+<link rel="shortcut icon" type="image/x-icon" href="ico.png" />
+  <head>
+
+    <script type="text/javascript">
+
+      function pal(a) {var b = ""
+      for(i=(a.length-1);i>=0;i=i-1){
+      b=b+a.charAt(i);
+      }
+      return b;
+      }
+
+      function f() {var c
+      elem1 = document.forms["form1"]["v1"];
+      x=  (elem1.value)
+      c=pal(x)
+      if(x==c){
+      document.write("The reverse of your text/number '"+x+"' is '"+c+"' . And its a palindrome!")
+      }
+      else{
+      document.write("The reverse of your text/number '"+x+"' is '"+c+"' . And its not a palindrome!")
+      }
+      }
+
+    </script>
+
+  </head>
+
+
+
+  <body>
+    <center>
+      <form name="form1" onsubmit="f()">
+	<br><br><br><br><br><br>
+	<h1>Check if your text/number is a plindrome or not!</h1>
+	<br>
+	<br>
+	Text/Number: <br>
+	<input type="text" name="v1">
+	<br><br>
+	<input type="submit" value="Go!">
+      </form>
+      </center>
+
+
+  </body>
+
+
+</html>

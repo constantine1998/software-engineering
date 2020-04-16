@@ -1,0 +1,52 @@
+<style>
+html {
+    min-height: 50%;
+}
+
+ body {
+    background-image: url("b.jpg");
+    background-repeat: repeat-y;
+}
+h1 {
+    color: #D3280D;
+    text-align: center;
+    background-image: url("Final.jpg");
+}
+b {
+    color: #19198F;
+    text-align: center;
+}
+
+i {
+  font-family: cursive;
+  font-size: 20px;
+  color: #EADA12;
+  background-color: #474639;
+}
+
+u {
+    font-family: verdana;
+    font-size: 20px;
+    color: #1B6921;
+}
+
+p {
+  font-family: red serif;
+  font-size: 25px;
+  background-color: lightgrey;
+  border: 10px solid green;
+  padding: 5px;
+  margin: 25px;
+
+}
+
+a {
+  font-size: 20px;
+  background-color: #EA3417;
+  border: 5px solid green;
+  font-family: cursive;
+  color: #3DD582;
+}
+
+
+</style>

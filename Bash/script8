@@ -1,0 +1,4 @@
+#Assuming that "classes" is a string in the files. I'm making the script accordingly.
+#It is not clear in the question about what is 'classes' and also I got no reply on that "Chatting website".
+
+for i in *.*; do grep -o "$1" $i | wc -l; done

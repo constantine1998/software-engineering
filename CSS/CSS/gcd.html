@@ -1,0 +1,52 @@
+<html>
+<title>HCF Calculator</title>
+<link rel="shortcut icon" type="image/x-icon" href="ico.png" />
+<head>
+
+<script type="text/javascript">
+  function f(){
+      elem1 = document.forms["form1"]["v1"];
+      elem2 = document.forms["form1"]["v2"];
+      n1=  Number (elem1.value)
+      n2=  Number (elem2.value)
+      if(n1<0 || n2<0){ document.write("Can't compute gcd of negative number.")}
+      else{
+          var temp;
+          var hcf;
+          if ( n2 > n1){
+              temp = n2;
+              n2 = n1;
+              n1 = temp;}
+
+          var i;
+
+          for (i = 1; i <=  n2; i++) {
+              if (n1 % i == 0 && n2 % i == 0)
+	          hcf = i;
+      }
+      document.write("gcd of " + n1 + " and " + n2 + " is " + hcf)
+      }
+  }
+
+</script>
+
+</head>
+
+
+
+<body>
+  <form name="form1" onsubmit="f()">
+    Number: <br>
+    <input type="text" name="v1">
+    <br>
+    Number: <br>
+    <input type="text" name="v2">
+
+    <input type="submit" value="Go!">
+  </form>
+
+
+</body>
+
+
+</html>
