@@ -1,0 +1,48 @@
+<html>
+
+<body>
+ <script type="text/javascript">
+	function Person (a, n) {
+		this.age = a
+		this.name = n
+	}
+
+	p = new Person (21, "he")
+	for (x in p) {
+		val = p[x]
+		document.write(x + ": " + val + "<br \>");
+	}
+
+	p.salary=200
+
+	document.write(" <br> <br>after adding an attribute into the object:" + "<br> <br>")
+	for (x in p) {
+		val = p[x]
+		document.write(x + ": " + val + "<br \>");
+	}
+
+	p.dumpall = function dumpall() {
+		for (x in this) {
+			val = p[x]
+			document.write(x + ": " + val + "<br \>");
+		}
+
+	}
+
+
+	document.write(" <br> <br>after adding a function into the object:" + "<br> <br>")
+	for (x in p) {
+		val = p[x]
+		document.write(x + ": " + val + "<br \>");
+	}
+
+	document.write("<br><br> Output of p.dumpall():<br><br>")
+	p.dumpall()
+
+	
+ </script>
+
+</body>
+
+
+</html>

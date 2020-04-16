@@ -1,0 +1,136 @@
+<html>
+
+<head>
+ <script type="text/javascript">
+a=16
+x=16
+	function up () {
+		upper = a-4;
+		if (upper<0) {return;}
+		 element1 = document.getElementById(x.toString())
+		 element2 = document.getElementById(upper.toString())
+    		clonedElement1 = element1.cloneNode(true);
+    		clonedElement2 = element2.cloneNode(true);
+
+    		element2.parentNode.replaceChild(clonedElement1, element2);
+    		element1.parentNode.replaceChild(clonedElement2, element1);
+a=a-4;
+alert(a)
+
+}
+
+function down () {
+                downer = a;
+		if (downer>17) {return;}
+		element1 = document.getElementById(x.toString())
+		element2 = document.getElementById(downer.toString())
+    		clonedElement1 = element1.cloneNode(true);
+    		clonedElement2 = element2.cloneNode(true);
+    		element2.parentNode.replaceChild(clonedElement1, element2);
+    		element1.parentNode.replaceChild(clonedElement2, element1);
+a=a+4;
+alert(a);
+}
+
+
+function left () {
+                lefter = a-1;
+		if (lefter<a-4) {return;}
+		element1 = document.getElementById(x.toString())
+		element2 = document.getElementById(lefter.toString())
+    		clonedElement1 = element1.cloneNode(true);
+    		clonedElement2 = element2.cloneNode(true);
+    		element2.parentNode.replaceChild(clonedElement1, element2);
+    		element1.parentNode.replaceChild(clonedElement2, element1);
+a=a-1;
+alert(a)
+}
+
+function right () {
+                righter = a-1;
+		if (righter>a-4) {return;}
+		element1 = document.getElementById(x.toString())
+		element2 = document.getElementById(righter.toString())
+    		clonedElement1 = element1.cloneNode(true);
+    		clonedElement2 = element2.cloneNode(true);
+    		element2.parentNode.replaceChild(clonedElement1, element2);
+    		element1.parentNode.replaceChild(clonedElement2, element1);
+a=a-1;
+}
+
+ </script>
+</head>
+
+<body>
+
+
+<h1> 699 Demo Table Cell <br> Element Change <br> Click the UP Button </h1>
+
+ <table border="1"  style="width:300px; height=300px">
+ <tr>
+
+ <td id="1" style="width:10%" bgcolor="#F0000"> <br><br><br> 1 </td> 
+
+<td id="2" style="width:10%" bgcolor="#F0000"> 2 </td> 
+
+<td id="3" style="width:10%" bgcolor="#F0000"> 3 </td> 
+
+<td id="4" style="width:10%" bgcolor="#113152"> 4 </td> 
+
+</tr>
+
+
+
+ <tr>
+
+ <td id="5" style="width:10%" bgcolor="#F0000"> <br><br><br> 5 </td> 
+
+<td id="6" style="width:10%" bgcolor="#F0000"> 6 </td> 
+
+<td id="7" style="width:10%" bgcolor="#F0000"> 7 </td> 
+
+<td id="8" style="width:10%" bgcolor="#16BE92"> 8 </td> 
+
+</tr>
+
+
+
+ <tr> 
+
+<td id="9" style="width:10%" bgcolor="#F0000">  <br><br><br> 9 </td> 
+
+<td id="10" style="width:10%" bgcolor="#F0000"> 10 </td> 
+
+<td id="11" style="width:10%" bgcolor="#F0000"> 11 </td> 
+
+<td id="12" style="width:10%" bgcolor="#228B13"> 12 </td>
+
+ </tr>
+
+
+
+ <tr>
+
+ <td id="13" style="width:10%" bgcolor="#F0000"> <br><br><br> 13 </td>
+
+ <td id="14" style="width:10%" bgcolor="#F0000"> 14 </td> 
+
+<td id="15" style="width:10%" bgcolor="#F0000"> 15 </td>
+
+ <td id="16" style="width:10%" bgcolor="#00000"> 16 </td>
+
+ </tr>
+
+</table>
+
+<br>
+<table>
+       <tr> <td></td> <td align="center"> <input type="button" onclick="up()" value = "UP" /> </td> <td></td>
+	<tr> <td><input type="button" onclick="left()" value = "LEFT" /> </td> <td></td><td><input type="button" onclick="right()" value = "RIGHT" /></td><br>
+       <tr> <td></td> <td align="center"> <input type="button" onclick="down()" value = "DOWN" /> </td> <td></td>
+</table>
+
+</body>
+
+
+</html>

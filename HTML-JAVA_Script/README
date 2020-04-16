@@ -1,0 +1,18 @@
+var	local scope, else global scope
+;	optional, if you keep one statement per line
+
+object	prototype based not class based
+	defined as collection of properties
+
+member functions are properties inside objects
+
+DOM model-- document object model-- access html elements and modify them
+
+
+
+Online tutorials:
+
+ 
+https://www.w3schools.com/html/default.asp
+
+https://www.w3schools.com/js/default.asp

@@ -1,0 +1,130 @@
+<html>
+  <head>
+
+    <script type="text/javascript">
+      var count=0
+      function restart(){location.reload(true);return;}
+      
+      function f(a,b){
+      count=count+1;
+      
+      if(count%2!=0){
+      document.getElementById(a).src="x.png";
+      var x =  document.getElementById(a).src;
+      document.getElementById(b).setAttribute("disabled", "disabled");}
+      
+      if(count%2==0){
+      document.getElementById(a).src="o.png";
+      var o =  document.getElementById(a).src;
+      document.getElementById(b).setAttribute("disabled", "disabled");}
+
+      if(
+      document.getElementById(1).src == x &&
+      document.getElementById(2).src == x &&
+      document.getElementById(3).src == x ||
+      document.getElementById(4).src == x &&
+      document.getElementById(5).src == x &&
+      document.getElementById(6).src == x ||
+      document.getElementById(7).src == x &&
+      document.getElementById(8).src == x &&
+      document.getElementById(9).src == x ||
+      document.getElementById(1).src == x &&
+      document.getElementById(4).src == x &&
+      document.getElementById(7).src == x ||
+      document.getElementById(2).src == x &&
+      document.getElementById(5).src == x &&
+      document.getElementById(8).src == x ||
+      document.getElementById(3).src == x &&
+      document.getElementById(6).src == x &&
+      document.getElementById(9).src == x ||
+      document.getElementById(1).src == x &&
+      document.getElementById(5).src == x &&
+      document.getElementById(9).src == x ||
+      document.getElementById(3).src == x &&
+      document.getElementById(5).src == x &&
+      document.getElementById(7).src == x
+      )
+      {
+      alert("Player 1 Wins! Restart the game.");
+      count=count+2;
+      for(var i=11;i<=19;i++){
+		 document.getElementById(i).setAttribute("disabled", "disabled");
+		 }
+		      }
+
+      if(
+      document.getElementById(1).src == o &&
+      document.getElementById(2).src == o &&
+      document.getElementById(3).src == o ||
+      document.getElementById(4).src == o &&
+      document.getElementById(5).src == o &&
+      document.getElementById(6).src == o ||
+      document.getElementById(7).src == o &&
+      document.getElementById(8).src == o &&
+      document.getElementById(9).src == o ||
+      document.getElementById(1).src == o &&
+      document.getElementById(4).src == o &&
+      document.getElementById(7).src == o ||
+      document.getElementById(2).src == o &&
+      document.getElementById(5).src == o &&
+      document.getElementById(8).src == o ||
+      document.getElementById(3).src == o &&
+      document.getElementById(6).src == o &&
+      document.getElementById(9).src == o ||
+      document.getElementById(1).src == o &&
+      document.getElementById(5).src == o &&
+      document.getElementById(9).src == o ||
+      document.getElementById(3).src == o &&
+      document.getElementById(5).src == o &&
+      document.getElementById(7).src == o
+      )
+      {
+      alert("Player 2 Wins! Restart the game.");
+      count=count+2;
+      for(var i=11;i<=19;i++){
+		 document.getElementById(i).setAttribute("disabled", "disabled");
+		 }
+		      }
+		      
+      if(count==9){alert("Game Over. Click on restart.");}
+      
+      if(count==10){location.reload(true); count=0;return;}
+      
+      }
+    </script>
+
+  </head>
+  
+  <body background="b.jpg">
+    <br><br>
+    <center>
+      <h3>Let's play the game of 'Tic Tac Toe'.</h3>
+      <br><br>
+      <table>
+	<tr>
+	  <td><button id="11" onclick="f(1,11)"><img id="1" src ="ico.png"></button></td>
+	  <td><button id="12" onclick="f(2,12)"><img id="2"src ="ico.png"></button></td>
+	  <td><button id="13" onclick="f(3,13)"><img id="3"src ="ico.png"></button></td>
+	</tr>
+	<tr>
+	  <td><button id="14" onclick="f(4,14)"><img  id="4" src ="ico.png"></button></td>
+	  <td><button id="15" onclick="f(5,15)"><img  id="5"src ="ico.png"></button></td>
+	  <td><button id="16" onclick="f(6,16)"><img  id="6" src ="ico.png"></button></td>
+	</tr>
+	<tr>
+	  <td><button id="17" onclick="f(7,17)"><img  id="7" src ="ico.png"></button></td>
+	  <td><button id="18" onclick="f(8,18)"><img  id="8" src ="ico.png"></button></td>
+	  <td><button id="19" onclick="f(9,19)"><img  id="9" src ="ico.png"></button></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td><br><br>
+	    <center>
+	      <button style="background-color:lightgreen" onclick="restart()"><b>Restart</b></button>
+	    </center>
+	  </td>
+	</tr>
+      </table>
+    </center>
+  </body>
+</html>

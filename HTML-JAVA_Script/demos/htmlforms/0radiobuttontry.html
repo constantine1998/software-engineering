@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+	function f() {
+		elem1 = document.forms["form1"]["v1"];
+		elem2 = document.forms["form1"]["v2"];
+		x=  Number (elem1.value)
+		y=  Number (elem2.value)
+		sum = x+y	
+		document.write(x + "+" + y + "=" + sum + "<br>")
+		document.write("not doing anything with button checks")
+	}
+
+</script>
+
+</head>
+
+
+
+<body>
+	<form name="form1" onsubmit="f()">
+		Number: <br>
+		 <input type="text" name="v1">
+		<br>
+		Number: <br>
+		<input type="text" name="v2">
+		
+		<br>
+		Add the numbers <input type="radio" name="buttongroup1" value="1" id="cb1" checked>
+		<br>
+
+		Multiply them <input type="radio" name="buttongroup1" id="cb2" value="2">
+	
+		<br>
+
+		<input type="submit" value="Go!"> 
+	</form>
+
+
+</body>
+
+
+</html>
