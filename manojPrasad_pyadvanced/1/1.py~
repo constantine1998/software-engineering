@@ -1,0 +1,14 @@
+def add(x,y):
+    return x+y
+
+def merge(l1,l2):
+    l3=map(add,l1,l2)
+    return l3
+
+l1=list(input("l1\n"))
+l2=list(input("l2\n"))
+if(len(l1)!=len(l2)):
+    print("Error, lists not same size")
+    exit(0)
+l3=merge(l1,l2)
+print(l3)
