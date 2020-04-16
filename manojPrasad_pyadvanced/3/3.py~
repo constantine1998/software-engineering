@@ -1,0 +1,11 @@
+join = lambda x,y:x+y
+simp = lambda x,y:reduce(join,x," ")
+
+def Lcollapse(L):
+    temp=""
+    t=reduce(simp,L)
+    temp=temp+t
+    print temp
+    return
+
+
