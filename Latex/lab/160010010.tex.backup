@@ -1,0 +1,110 @@
+\documentclass[titlepage,onecolumn,12pt]{report}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\title {Usage of Mobile Phones By Teenagers}
+\author {ShreyaS}
+
+\begin{document}
+\maketitle
+
+\section{\it Mobile Phones}
+
+As we all know what is a mobile phone soo there not much to tell about a mobile phone.
+Anyways, a mobile phone is a device which replaces everything, incuding our friends and all relations. Ha ha just kidding.
+
+In today's era, a mobile phone is as useful as oxygen to us. It literally does almost everything for us.
+
+\subsection{}
+\begin{enumerate}
+  \item From waking us in the morning.(Alarm)
+  \item To Helping us making a new breakfast.(Recipie)
+
+  \item Finding a place.(Maps)
+
+  \item Talking with someone(Telephone)
+
+ \item Understanding something(Dictionary,Book,Translator)
+
+  \item Reading about a subject(Books)
+
+\end{enumerate}
+
+\section{\it Teenagers and Mobile}
+
+\begin{center}
+
+Now a day every teenager has a mobile. Be it a small one or a High class iPhone. We all know that it is a must for them. But we also should put a limit to their use.
+\end{center}
+
+\begin{figure}
+\includegraphics[width=7cm,height=2cm]{index}
+\includegraphics[scale=0.4]{img.png}
+\caption{Mobile Usage}
+\label{figsc}
+\end{figure}
+
+\begin{table}
+\caption{Usage}
+\centering
+\begin{tabular} {|l|c|r|}
+\hline
+{\bf S.no} & {\bf Activity } & {\bf All Teens(prcentage)} \\ \hline \hline
+1 & Send text messages daily & 38\\
+\hline
+2 & Call on cell phone daily & 36 \\
+\hline
+3 & Talk on landline daily & 32\\
+\hline
+4 & IM daily & 24\\
+\hline
+
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Comparitive Usage}
+\centering
+\begin{tabular} {|l|c|r|}
+\hline
+{\bf Device} & {\bf Time Spent (hr:min)} \\ \hline \hline
+Smart phone & 2:42\\
+\hline
+Computer & 1:37\\
+\hline
+Televison & 1:31\\
+\hline
+Tablet & 0:45\\
+\hline
+
+\end{tabular}
+\end{table}
+
+\chapter{Equation}
+\begin{enumerate}
+ \item $\frac{\pi}{4} = \sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)}$
+ \item $\frac{\pi}{4} = \sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1) \times {2}^{2n + 1}} + \sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1) \times {3}^{2n+1}}$
+ \item $\frac{\pi}{4} = 4 \sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1) \times {5}^{2n + 1}} - \sum\limits_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1) \times {239}^{2n+1}}$
+ \item $\frac{1}{\pi} = \frac{2\sqrt{2}}{9801}\sum\limits_{n=0}^{\infty} \frac{(4n)!(1103 + 26390n)}{{(n!)}^{4} \times {396}^{4n}}$
+ \item $\pi = \sum\limits_{n=0}^{\infty} \frac{1}{{16}^{n}}(\frac{4}{8n+1} - \frac{2}{8n + 4} - \frac{1}{8n + 5} - \frac{1}{8n + 6})$
+ \item $\pi = \sum\limits_{n=0}^{\infty} \frac{{(-1)}^{n}}{{4}^{n}}(\frac{2}{4n+1} + \frac{2}{4n + 2} + \frac{1}{4n + 3})$
+ \item $15\pi\ + 42 = \sum\limits_{n=1}^{\infty} \frac{({-4}^{n}){(2n)!}^{2}(3n)!(201 - 952n)}{(6n)!n!}$
+ \item $\frac{6}{{\pi}^{2}} = 64 \sum\limits_{n=0}^{\infty} \frac{(6n)!(532{n}^{2} + 126n + 9)}{{(n!)}^{6}{10}^{6n+3}}$
+ \item $\frac{22}{7} - \pi = \int\limits_{0}^{1} \frac{{x}^{4}({1-x}^{4})dx}{1 + {x}^{2}}$
+ \item $\pi log2 = \int\limits_{0}^{\pi/2} \frac{{x}^{2}dx}{{sin}^{2}x}$
+\end{enumerate}
+
+\chapter{Dia figure}
+ \begin{figure}
+  \includegraphics[scale = 0.3]{Parse_Tree}
+  \label{Parse Tree}
+  \caption{Parse tree}
+ \end{figure}
+ 
+ \chapter{Discrete Structures}
+ \begin{enumerate}
+  \item Domination laws: $p \bigvee \textbf{T} \equiv \textbf{F}, p \bigwedge \textbf{F} \equiv \textbf{F}$
+ \end{enumerate}
+
+
+\end{document}

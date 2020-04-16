@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: 160010010.aux
+The style file: plain.bst
+Database file #1: refer.bib.bib
+Warning--empty booktitle in How_I_Met_your_Mother
+Warning--empty year in Death_Note
+Warning--empty journal in Agents_of_Shield
+Warning--empty journal in Sherlock
+Warning--empty year in Sherlock
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            515 strings with 4182 characters,
+and the built_in function-call counts, 892 in all, are:
+= -- 76
+> -- 28
+< -- 0
++ -- 12
+- -- 8
+* -- 42
+:= -- 162
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 46
+empty$ -- 86
+format.name$ -- 8
+if$ -- 179
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 5
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 23
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 5
+while$ -- 9
+width$ -- 5
+write$ -- 38
+(There were 5 warnings)
