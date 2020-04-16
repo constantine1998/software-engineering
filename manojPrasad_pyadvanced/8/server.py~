@@ -1,0 +1,32 @@
+import socket                                         
+import time
+import sys
+
+pal = "Got it!"
+# create a socket object
+serversocket = socket.socket(
+	        socket.AF_INET, socket.SOCK_STREAM) 
+
+# get local machine name
+host = (sys.argv[1])                         
+port = int(sys.argv[2])                                          
+
+# bind to the port
+serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+serversocket.bind((host, port))                                  
+
+# queue up to 5 requests
+serversocket.listen(5)                                           
+      
+
+print("Server started waiting for client to connect....")
+#Establish a connection
+clientsocket,addr = serversocket.accept()
+print("Connected to host ip:%s") %host
+tm=clientsocket.recv(10240)
+print("Received '%s' from %s") %(tm,host)
+clientsocket.send(pal)
+print("Sent '%s' to '%s'") %(pal,host)
+clientsocket.close()
+
+print("hallo ",tm)
